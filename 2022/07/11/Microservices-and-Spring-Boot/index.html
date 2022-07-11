@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"deepakpraman.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":10,"offset":12,"width":200},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Spring Cloud ConfigSpring Cloud DiscoverySpring Cloud GatewaySpring Cloud SleuthSpring Cloud StreamZipkinSpring Cloud Circuit BreakerTurbine">
+<meta name="description" content="Spring Cloud ConfigSpring Cloud DiscoverySpring Cloud GatewaySpring Cloud SleuthZipkinSpring Cloud StreamSpring Cloud Circuit BreakerTurbine">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Microservices and Spring Boot">
 <meta property="og:url" content="https://deepakpraman.github.io/2022/07/11/Microservices-and-Spring-Boot/index.html">
 <meta property="og:site_name" content="Deepak P Raman">
-<meta property="og:description" content="Spring Cloud ConfigSpring Cloud DiscoverySpring Cloud GatewaySpring Cloud SleuthSpring Cloud StreamZipkinSpring Cloud Circuit BreakerTurbine">
+<meta property="og:description" content="Spring Cloud ConfigSpring Cloud DiscoverySpring Cloud GatewaySpring Cloud SleuthZipkinSpring Cloud StreamSpring Cloud Circuit BreakerTurbine">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-07-11T18:08:10.000Z">
-<meta property="article:modified_time" content="2022-07-11T18:48:28.897Z">
+<meta property="article:modified_time" content="2022-07-11T18:50:47.141Z">
 <meta property="article:author" content="prd">
 <meta name="twitter:card" content="summary">
 
@@ -120,7 +120,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Config"><span class="nav-number">1.</span> <span class="nav-text">Spring Cloud Config</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Discovery"><span class="nav-number">2.</span> <span class="nav-text">Spring Cloud Discovery</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Gateway"><span class="nav-number">3.</span> <span class="nav-text">Spring Cloud Gateway</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Sleuth"><span class="nav-number">4.</span> <span class="nav-text">Spring Cloud Sleuth</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Stream"><span class="nav-number">5.</span> <span class="nav-text">Spring Cloud Stream</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Zipkin"><span class="nav-number">5.0.1.</span> <span class="nav-text">Zipkin</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Circuit-Breaker"><span class="nav-number">6.</span> <span class="nav-text">Spring Cloud Circuit Breaker</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Turbine"><span class="nav-number">6.0.1.</span> <span class="nav-text">Turbine</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Config"><span class="nav-number">1.</span> <span class="nav-text">Spring Cloud Config</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Discovery"><span class="nav-number">2.</span> <span class="nav-text">Spring Cloud Discovery</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Gateway"><span class="nav-number">3.</span> <span class="nav-text">Spring Cloud Gateway</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Sleuth"><span class="nav-number">4.</span> <span class="nav-text">Spring Cloud Sleuth</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Zipkin"><span class="nav-number">4.0.1.</span> <span class="nav-text">Zipkin</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Stream"><span class="nav-number">5.</span> <span class="nav-text">Spring Cloud Stream</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Cloud-Circuit-Breaker"><span class="nav-number">6.</span> <span class="nav-text">Spring Cloud Circuit Breaker</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Turbine"><span class="nav-number">6.0.1.</span> <span class="nav-text">Turbine</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -200,7 +200,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-07-11 22:08:10 / Modified: 22:48:28" itemprop="dateCreated datePublished" datetime="2022-07-11T22:08:10+04:00">2022-07-11</time>
+      <time title="Created: 2022-07-11 22:08:10 / Modified: 22:50:47" itemprop="dateCreated datePublished" datetime="2022-07-11T22:08:10+04:00">2022-07-11</time>
     </span>
 
   
@@ -213,7 +213,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Spring-Cloud-Config"><a href="#Spring-Cloud-Config" class="headerlink" title="Spring Cloud Config"></a>Spring Cloud Config</h1><h1 id="Spring-Cloud-Discovery"><a href="#Spring-Cloud-Discovery" class="headerlink" title="Spring Cloud Discovery"></a>Spring Cloud Discovery</h1><h1 id="Spring-Cloud-Gateway"><a href="#Spring-Cloud-Gateway" class="headerlink" title="Spring Cloud Gateway"></a>Spring Cloud Gateway</h1><h1 id="Spring-Cloud-Sleuth"><a href="#Spring-Cloud-Sleuth" class="headerlink" title="Spring Cloud Sleuth"></a>Spring Cloud Sleuth</h1><h1 id="Spring-Cloud-Stream"><a href="#Spring-Cloud-Stream" class="headerlink" title="Spring Cloud Stream"></a>Spring Cloud Stream</h1><h3 id="Zipkin"><a href="#Zipkin" class="headerlink" title="Zipkin"></a>Zipkin</h3><h1 id="Spring-Cloud-Circuit-Breaker"><a href="#Spring-Cloud-Circuit-Breaker" class="headerlink" title="Spring Cloud Circuit Breaker"></a>Spring Cloud Circuit Breaker</h1><h3 id="Turbine"><a href="#Turbine" class="headerlink" title="Turbine"></a>Turbine</h3>
+        <h1 id="Spring-Cloud-Config"><a href="#Spring-Cloud-Config" class="headerlink" title="Spring Cloud Config"></a>Spring Cloud Config</h1><h1 id="Spring-Cloud-Discovery"><a href="#Spring-Cloud-Discovery" class="headerlink" title="Spring Cloud Discovery"></a>Spring Cloud Discovery</h1><h1 id="Spring-Cloud-Gateway"><a href="#Spring-Cloud-Gateway" class="headerlink" title="Spring Cloud Gateway"></a>Spring Cloud Gateway</h1><h1 id="Spring-Cloud-Sleuth"><a href="#Spring-Cloud-Sleuth" class="headerlink" title="Spring Cloud Sleuth"></a>Spring Cloud Sleuth</h1><h3 id="Zipkin"><a href="#Zipkin" class="headerlink" title="Zipkin"></a>Zipkin</h3><h1 id="Spring-Cloud-Stream"><a href="#Spring-Cloud-Stream" class="headerlink" title="Spring Cloud Stream"></a>Spring Cloud Stream</h1><h1 id="Spring-Cloud-Circuit-Breaker"><a href="#Spring-Cloud-Circuit-Breaker" class="headerlink" title="Spring Cloud Circuit Breaker"></a>Spring Cloud Circuit Breaker</h1><h3 id="Turbine"><a href="#Turbine" class="headerlink" title="Turbine"></a>Turbine</h3>
     </div>
 
     
